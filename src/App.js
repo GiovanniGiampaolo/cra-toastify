@@ -47,7 +47,7 @@ function App() {
         <div className="App">
             <header className="App-header">
 
-                <Card style={{padding: 20, minWidth: 400}}>
+                <Card style={{padding: 20}}>
                     <Button variant='outlined' color='primary' onClick={notify}>Click for notify!</Button><br/>
 
                     {/* POSITION */}
@@ -83,7 +83,7 @@ function App() {
                     </Typography>
 
                     {/* TEXT */}
-                    <TextField variant={'outlined'} label={'Write here'} value={textVal} onChange={handleCustomText}/>
+                    <TextField variant={'outlined'} style={{margin: 10}} label={'Write here'} value={textVal} onChange={handleCustomText}/>
 
                 </Card>
 
