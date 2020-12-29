@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/cra-tostify/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/cra-tostify/static/js/main.d446a9fd.chunk.js",
+    "main.js.map": "/cra-tostify/static/js/main.d446a9fd.chunk.js.map",
+    "runtime-main.js": "/cra-tostify/static/js/runtime-main.73f041be.js",
+    "runtime-main.js.map": "/cra-tostify/static/js/runtime-main.73f041be.js.map",
+    "static/css/2.83342f34.chunk.css": "/cra-tostify/static/css/2.83342f34.chunk.css",
+    "static/js/2.8cec423e.chunk.js": "/cra-tostify/static/js/2.8cec423e.chunk.js",
+    "static/js/2.8cec423e.chunk.js.map": "/cra-tostify/static/js/2.8cec423e.chunk.js.map",
+    "static/js/3.889faad0.chunk.js": "/cra-tostify/static/js/3.889faad0.chunk.js",
+    "static/js/3.889faad0.chunk.js.map": "/cra-tostify/static/js/3.889faad0.chunk.js.map",
+    "index.html": "/cra-tostify/index.html",
+    "service-worker.js": "/cra-tostify/service-worker.js",
+    "service-worker.js.map": "/cra-tostify/service-worker.js.map",
+    "static/css/2.83342f34.chunk.css.map": "/cra-tostify/static/css/2.83342f34.chunk.css.map",
+    "static/css/main.8c8b27cf.chunk.css.map": "/cra-tostify/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.8cec423e.chunk.js.LICENSE.txt": "/cra-tostify/static/js/2.8cec423e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73f041be.js",
+    "static/css/2.83342f34.chunk.css",
+    "static/js/2.8cec423e.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.d446a9fd.chunk.js"
+  ]
+}
