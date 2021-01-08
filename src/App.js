@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './App.css'
 import {toast, ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -21,6 +21,10 @@ function App() {
     const [currentType, setType] = useState('default')
     const [textVal, setTextVal] = useState('')
     const [limit, setLimit] = useState(3)
+
+    useEffect(() => {
+        console.log('%cThis is styled console log', 'color: white; padding: 30px 10px 30px 10px; background:dodgerblue')
+    }, [])
 
     const handleChangeLimit = (pos) => {
         setLimit(pos.target.value)
@@ -62,7 +66,8 @@ function App() {
                     <Typography variant={'h6'} style={{textAlign: 'left'}}>Type</Typography>
                     <RadioGroup value={currentType} onChange={handleType}
                                 style={{display: 'flex', flexWrap: 'wrap', flexDirection: 'row'}}>
-                        {TYPE_ARR.map((currentPos) => <FormControlLabel value={currentPos.value} control={<Radio/>}
+                        {TYPE_ARR.map((currentPos) => <FormControlLabel key={currentPos.value + 'key'}
+                                                                        value={currentPos.value} control={<Radio/>}
                                                                         label={currentPos.label}/>)}
                     </RadioGroup>
 
@@ -73,17 +78,19 @@ function App() {
 
                     {/* LIMIT TO */}
                     <Typography variant={'h6'} style={{textAlign: 'left'}}>
-                        Limit to  <span/>
+                        Limit to <span/>
                         <Select
                             value={limit}
                             onChange={handleChangeLimit}
                         >
-                            {LIMIT_VALUE.map((elem) => <MenuItem value={elem.value}>{elem.label}</MenuItem>)}
+                            {LIMIT_VALUE.map((elem) => <MenuItem key={elem.value + 'key'}
+                                                                 value={elem.value}>{elem.label}</MenuItem>)}
                         </Select>
                     </Typography>
 
                     {/* TEXT */}
-                    <TextField variant={'outlined'} style={{margin: 10}} label={'Write here'} value={textVal} onChange={handleCustomText}/>
+                    <TextField variant={'outlined'} style={{margin: 10}} label={'Write here'} value={textVal}
+                               onChange={handleCustomText}/>
 
                 </Card>
 
